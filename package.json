@@ -1,0 +1,22 @@
+{
+  "name": "metric-analizer",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./dist/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^4.0.3"
+  }
+}
